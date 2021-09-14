@@ -31,14 +31,15 @@ public class programa {
             System.out.println("            8 - SAIR");
             System.out.println("       -------------------------------------------------------------------");
             op = ler.nextInt();
+            ler.nextLine();
             int i;
             String nome;
 
 
             switch (op) {
                 case 1 -> {
-                    System.out.println("Digite o nome do Participante!");
-                    pessoas.add(ler.next());
+                    System.out.print("Digite o nome do Participante!");
+                    pessoas.add(ler.nextLine());
                 }
                 case 2 -> {
                     System.out.println("Digite a posição a remover!");
@@ -47,7 +48,7 @@ public class programa {
                 }
                 case 3 -> {
                     System.out.println("Digite o nome do participante a excluir!");
-                    nome = ler.next();
+                    nome = ler.nextLine();
                     if (pessoas.contains(nome)) {
                         pessoas.remove(nome);
                         System.out.println("Usuário Removido!");
@@ -61,13 +62,12 @@ public class programa {
                     for (i = 0; i < pessoas.size(); i++) {
                         System.out.println(pessoas.get(i));
                     }
-                    // System.out.println(pessoas);
                     System.out.println("Pressione para continuar...");
                     new Scanner(System.in).nextLine();
                 }
                 case 5 -> {
                     System.out.println("Digite o nome do participante a pesquisar!");
-                    nome = (ler.next());
+                    nome = (ler.nextLine());
                     if (pessoas.contains(nome)) {
                         System.out.println("Usuário Cadastrado!");
                     } else {
