@@ -7,7 +7,7 @@ Tiago Nogueira Peixoto
 */
 
 import java.util.Scanner;
-public class program {
+public class notas {
     public static void main(String[] args) {
         double av1, av2, av3, media;
         Scanner ler = new Scanner(System.in);
